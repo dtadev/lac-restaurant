@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAC Restaurant</title>
+    <!-- reset css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/f8grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        
+<header class="header">
+
+    <section class="flex">
+ 
+       <a href="#home" class="logo">LAC.</a>
+ 
+       <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#menu">our menu</a>
+          <a href="#order">my order</a>
+          <a href="#about us">about us</a>
+       </nav>
+ 
+       <div class="icons">
+          <div id="menu-btn" class="dta-menu-btn fas fa-bars"></div>
+          <!-- <div id="user-btn" class="fas fa-user"></div> -->
+          <div id="order-btn" class="fas fa-box"></div>
+          <div id="cart-btn" class="fas fa-shopping-cart"><span>(2)</span></div>
+       </div>
+ 
+    </section>
+
+ 
+ </header>
+
+
+ <section class="order" id="order">
+
+    <h1 class="heading">your table now
+        (01)
+    </h1>
+
+    <!-- <form action="">
+        Tables are empty or have not ordered yet!
+    </form> -->
+ 
+    <form action="" method="post">
+ 
+       <div class="display-orders">
+         <p class="dta__order-empty">Table is empty or have not ordered yet!</p> 
+         <!-- <p>Oysters <span>( $8/- x 2 )</span></p>
+          <p>Hot Pot <span>( $40/- x 1 )</span></p>
+          <p>Sushi <span>( $20/- x 1 )</span></p>
+          <p>Beef Steak <span>( $30/- x 4)</span></p>
+          <p>Sasimi <span>( $30/- x 1 )</span></p>
+          <p>Coca Cola<span>( $6/- x 4 )</span></p>
+          <p>Salad <span>( $12/- x 1 )</span></p> -->
+       </div>
+    </form>
+ 
+ </section>
+
+ <section id="menu" class="menu">
+
+    <h1 class="heading">our menu</h1>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <div class="price">$<span>8</span>/-</div>
+          <img src="images/oyster.png" alt="">
+          <div class="name">Oysters </div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add" name="add_to_cart" class="btn btn-fix">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>40</span>/-</div>
+          <img src="images/hotpot.png" alt="">
+          <div class="name">Hot Pot </div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>20</span>/-</div>
+          <img src="images/sishi.png" alt="">
+          <div class="name">Sushi</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>30</span>/-</div>
+          <img src="images/beeff.png" alt="">
+          <div class="name">Beef Steak</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>30</span>/-</div>
+          <img src="images/sasimi.png" alt="">
+          <div class="name">Sasimi</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>6</span>/-</div>
+          <img src="images/cocacola.png" alt="">
+          <div class="name">Coca Cola</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>12</span>/-</div>
+          <img src="images/salad.png" alt="">
+          <div class="name">Salad</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+       
+ 
+    </div>
+ 
+ </section>
+ <section class="footer">
+
+    <div class="box-container">
+ 
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>phone number</h3>
+          <p>090-854-0000</p>
+          <p>111-222-3333</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>our address</h3>
+          <p>QL1, Vietnam - Long An</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>15:30pm to 23:30pm</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email address</h3>
+          <p>dta-bosss@gmail.com</p>
+          <p>thanh-boss@gmail.com</p>
+       </div>
+ 
+    </div>
+ 
+    <div class="credit">
+       &copy; copyright @ 2022 by <span>LAC Restaurant</span> | all rights reserved!
+    </div>
+ 
+ </section>
+    </div>
+</body>
+</html>

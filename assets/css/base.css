@@ -1,0 +1,71 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #f84a2f;
+    --border-color: #dbdbdb;
+    --star-gold-color: #ffce3e;
+
+
+    --red:#e74c3c;
+    --black:#333;
+    --white:#fff;
+    --light-bg:#f5f5f5;
+    --light-color:#666;
+    --border:.1rem solid var(--light-color);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    box-sizing: inherit; /*kế thừa thẻ chứa nó*/
+}
+
+html{
+    /*fz 100% = 16px => 62.5% = 10px*/ 
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    /* background: var(--light-bg); */
+    /* overflow-x: hidden; */
+ }
+ 
+ section{
+    padding:2rem;
+    margin:0 auto;
+    max-width: 1200px;
+ }
+
+::-webkit-scrollbar{
+    width: 1rem;
+    height: .5rem;
+ }
+ 
+ ::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+    background-color: var(--red);
+ }
+
+ 
+.btn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    padding:1rem 3rem;
+    font-size: 2rem;
+    color:var(--white);
+    background-color: var(--red);
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+ }
+ 
+ .btn:hover{
+    background-color:var(--black);
+ }
